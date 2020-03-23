@@ -1,2 +1,5 @@
 # frontend-AllezCine
-Exercice avec le même groupe de 3 qui consiste à une intégration frontend du site AllezCiné lors de ma formation à Becode
+
+Exercice en groupe de trois qui consiste à reproduire le site AllezCine grâce à l'HTML5, CSS3 et JavaScript.
+
+[Visualiser](https://sarahleejara.github.io/frontend-AllezCine/html/index.html)

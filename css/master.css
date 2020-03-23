@@ -1,0 +1,417 @@
+/*=============
+COLOR TO USE
+===============*/
+.color1 {
+	color: red;
+}
+.color2 {
+	color: white;
+}
+.color3 {
+	color: gray;
+}
+/*=============
+CAROUSEL STYLE
+===============*/
+
+.relativeBox {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Image Size for the Carousel*/
+.imageSize {
+	height: 45em;
+	width: auto;
+}
+
+.imageOpacity {
+	opacity: 0.5;
+}
+
+.carousel {
+    position: relative;
+
+    top: 1;
+}
+.superpose {
+	background-color: black;
+}
+/*Text + button over the carousel*/
+.middleText {
+	position: absolute;
+  text-align: center;
+	margin-top: 17em;
+  z-index: 2;
+  left: 30%;
+  right: 30%;
+}
+.middleText h6 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+/*============
+NAV BAR
+==============*/
+.navbar {
+    position: absolute;
+    top: 6px;
+    z-index:10;
+    background:#fff;
+    width:100%;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.contactBtn {
+	padding-left: 14em;
+}
+.homeBtn {
+	margin-left: 5em;
+}
+.genreBtn {
+	border-radius: 1px;
+}
+.searchBarPosition {
+	margin-right: 1.5em;
+}
+.middleText p {
+	font-size: 0.9em;
+}
+.trailerBtn {
+	padding: 0.3em 0.5em;
+	font-size: 0.9em;
+	border-radius: 1px;
+}
+.loupeIcone {
+	position: absolute;
+	padding-left: 240px;
+}
+.searchBar {
+	border-radius: 50px;
+	padding: 2px 35px;
+}
+
+/*=================================*/
+
+/*CODE SARAH LEE*/
+
+/*REUSABLE CODE*/
+
+.borderleft {
+  border-left: 5px solid #EF3054;
+  padding: 5px 10px;
+}
+.pad-tb-20 {
+  padding: 20px 0px;
+}
+hr{
+	background-color: lightgrey;
+	opacity: 0.5;
+}
+.pad3{
+	padding: 3rem 0;
+}
+.p-b2{
+	padding-bottom: 2rem;
+}
+.hide{
+	visibility: hidden;
+	position: absolute;
+}
+/*STYLING CODE*/
+
+h3{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.intro{
+  background-color: #EF3054;
+  color: #FFF;
+  padding: 7px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.intro a {
+  background-color: black;
+  color: #FFF;
+  padding: 5px;
+}
+.bar{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #a2a2a2;
+  color: #fff;
+  font: 14px arial, sans-serif;
+}
+.bar a {
+	text-decoration: none;
+	color: #09f;
+}
+
+/*RESEAUX SOCIAUX*/
+
+#social{
+  left: 0%;
+  position: fixed;
+  top: 150px;
+	z-index: 2;
+	width: 0%;
+}
+
+#social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-260px, 0);
+}
+#social ul li {
+  display: block;
+  margin: 10px;
+  width: 300px;
+  text-align: right;
+  padding: 8px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+#social ul li a{
+	color: #FFF;
+}
+#social ul li:hover {
+	transform: translate(100px, 0);
+  -moz-transform: translate(100px, 0);
+  -ms-transform: translate(100px, 0);
+  -o-transform: translate(100px, 0);
+	-webkit-transform: translate(100px, 0);
+}
+#social ul li:hover a {
+	text-decoration: none;
+}
+#social ul li:hover i {
+  color: #343633;
+  background: #FFF;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+#social ul li i {
+  margin-left: 10px;
+  color: #343633;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.facebook{
+	background-color: #3b5998;
+}
+.facebook i{
+	padding: 8px 10px;
+}
+.twitter i, .google i, .dribbble i{
+	padding: 8px;
+}
+.twitter{
+	background-color: #0084b4;
+}
+.google i{
+	font-size: 12px;
+}
+.google{
+	background-color: #db3236;
+}
+.dribbble{
+	background-color: #C73B6F;
+}
+/*FILMS*/
+.morefilms, .lessfilms, .moreseries, .lessseries{
+	text-align: center;
+}
+.morefilms button, .send button, .lessfilms button, .moreseries button, .lessseries button{
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #EF3054;
+	border: 1px solid #EF3054;
+	padding: 8px 10px;
+}
+.border{
+  border-radius: 5px;
+}
+#films{
+  padding: 20px;
+	text-align: center;
+}
+#films h7, p{
+  margin: 0;
+}
+#movies nav, #series nav{
+	padding: 0 2rem 2rem 2rem;
+}
+#films img, #movies img, #shop img{
+	overflow: hidden;
+	position: relative;
+}
+
+.tab-content{
+	text-align: center;
+}
+
+#contactus .row{
+	padding: 10px 0;
+}
+
+#contactus textarea{
+	padding: 10px;
+}
+#contactus form{
+	padding: 10px 0;
+}
+
+/*FOOTER CSS*/
+/* subscribe form et bouton */
+.subscribe {
+  text-align: center;
+	padding: 5rem 0;
+}
+.subscribe h4 {
+  text-transform: uppercase;
+  color: red;
+}
+.subscribe button {
+  font-size: 14px;
+  background-color: red;
+  border: none;
+  color: white;
+	height: 27px;
+
+}
+.subscribe input {
+  width: 350px;
+  color: grey;
+	height: 27px;
+}
+/* footer */
+footer{
+	background-color: black;
+}
+.list-footer{
+	border-bottom: 1px solid;
+}
+.list-footer h5 {
+color: white;
+text-transform: uppercase;
+}
+.list-footer li {
+  font-size: 12px;
+}
+
+.release ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.movies-footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.review-movies button {
+	background-color: rgba(192,192,192,0.2);
+	opacity: 50%;
+	font-size: 10px;
+	color: white;
+	border: black 1px solid;
+	padding: 5px;
+	margin: 0px;
+}
+.latest-movies {
+  flex-direction: column;
+  padding-right: 20px;
+  font-size: 10px;
+  flex-wrap: wrap;
+}
+.latest-movies img {
+  height: 50px;
+  padding: 5px;
+}
+.allezcine h4{
+	color: red;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.allezcine hr{
+	margin-top: 12px;
+}
+.white{
+	color: #FFF;
+}
+/* contact réseaux sociaux  */
+.connect-us {
+  padding-top: 30px;
+	margin-top: 60px;
+  color: white;
+  padding-bottom: 20px;
+	border-top: 1px solid rgb(38, 41, 45);
+
+}
+.connect-us h5 {
+  text-align: center;
+  font-size: 23px;
+}
+.arrow-top{
+	position: fixed;
+	bottom: 10%;
+	right: 2%;
+}
+
+ #toparrow {
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px red solid;
+  background-color: black;
+}
+.sociaux{
+	text-align: center;
+}
+
+.sociaux i{
+	border: 1px solid grey;
+	padding: 7px 10px;
+	margin: 0 2px;
+}
+.shop-item{
+	padding: 0;
+	margin: 5px;
+}
+.shop-item .card-img-top{
+	width: 100%;
+}
+.shop-item .card-body{
+	padding: 0;
+}

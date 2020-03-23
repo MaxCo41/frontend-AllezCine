@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset= "utf-8">
+    <title>AllezCiné</title>
+    <link rel="stylesheet" media="screen" href="../css/media_queries.css" type="text/css" />
+    <link rel="stylesheet" media="screen(700px)" href="../css/media_queries.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/master.css">
+  </head>
+  <body>
+    <header>
+      <div class="relativeBox">
+        <!--================================
+          NAVBAR
+        ====================================-->
+        <!-- ALLERCINE! Logo =================-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <a class="navbar-brand" href="#">
+            <h1 class="col display-5 text-uppercase text-white font-weight-bold">
+              <span class="color1">Allez</span>Cine!</h1><!--Logo coin supérieur Droit--></a>
+              <!-- Home ==========================-->
+              <div class="collapse navbar-collapse homeBtn" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"><!-- List initialization-->
+                  <li class="nav-item active">
+                    <a class="nav-link mt-2" href="#">
+                      <span class="color1">Home</span>
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <!-- Genre =========================-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="btn btn-danger color2 genreBtn">Genre</span>
+                    </a>
+                    <!-- Dropdown Menu  ==============-->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Comedy</a>
+                      <a class="dropdown-item" href="#">Thriller</a>
+                      <a class="dropdown-item" href="#">Sci-fi</a>
+                      <a class="dropdown-item" href="#">Drama</a>
+                      <a class="dropdown-item" href="#">Adventure</a>
+                    </div>
+                  </li>
+                  <!-- Contact =====================-->
+                  <li class="nav-item active">
+                    <a class="nav-link mt-2" href="#">
+                      <span class="contactBtn color2">Contact</span>
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                </ul> <!-- List End -->
+                <!-- Empty Button ================-->
+
+                <!-- Search Bar ======================-->
+                <form class="form-inline my-2 my-lg-0 searchBarPosition">
+                  <input class="form-control mr-sm-2 imageOpacity text-white bg-secondary searchBar" type="search" placeholder="Recherche" aria-label="Search" value="Recherche"></input>
+                  <i class="fa fa-search color2 loupeIcone" aria-hidden="true"></i>
+                </form>
+              </div>
+            </nav>
+
+        <!--=============================
+        MIDDLE TEXT
+        =================================-->
+        <div class="middleText">
+          <h1 class="text-uppercase display-5 text-white">Latest
+            <span class="color1">On</span>Line
+            <span class="color1">Mo</span>vies
+          </h1>
+          <p class="text-uppercase text-white">In space no one can ear you scream
+          </p>
+          <a class="btn btn-danger btn-lg trailerBtn text-uppercase" href="#" role="button"> Watch trailer </a>
+        </div>
+            <!--=============================
+            JUMBOTRON-CAROUSEL-SLIDER
+            =================================-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators mb-5 pb-5">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              </ol>
+              <!--First Slide-->
+              <div class="carousel-inner superpose">
+                <div class="carousel-item active">
+                  <img class="imageOpacity imageSize d-block w-100" src="../img/carouselImg/fantasy.jpg" alt="First slide">
+                </div>
+                <!--Second Slide-->
+                <div class="carousel-item">
+                  <img class="imageOpacity imageSize d-block w-100" src="../img/carouselImg/turtle.jpg" alt="Second slide">
+                </div>
+                <!--Third Slide-->
+                <div class="carousel-item">
+                  <img class="imageOpacity imageSize d-block w-100" src="../img/carouselImg/horse-soldier.jpg" alt="Third slide">
+                </div>
+                <!--Fourth Slide-->
+                <div class="carousel-item">
+                  <img class="imageOpacity imageSize d-block w-100" src="../img/carouselImg/love.jpg" alt="Fourth slide">
+                </div>
+              </div>
+            </div>
+        </div>
+      </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Welcome</h5>
+          </div>
+          <div class="modal-body">
+            Please enter your age.
+          </div>
+          <div class="modal-footer">
+            <input type="number" name="yourage" required id="Age">
+            <input type="submit" value="Submit" id="submitage">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- SOCiAL MEDIA FIXED BUTTONS -->
+
+    <!-- SOCiAL MEDIA FIXED BUTTONS -->
+    <div id="social">
+      <ul>
+        <li class="facebook"><a href="https://facebook.com/" target="_blank">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com/" target="_blank">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="dribbble"><a href="https://dribbble.com/" target="_blank">Dribbble <i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+        <li class="google"><a href="http://google.com/" target="_blank">Google <i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="intro container-fluid">
+      <i class="fa fa-phone" aria-hidden="true"></i> <span>(+000) 009 455 4088</span>
+      <a data-toggle="modal" data-target="#login">Login</a>
+      <a data-toggle="modal" data-target="#register">Register</a>
+    </div>
+    <!-- LOG IN MODAL -->
+    <div class="modal fade"email id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">Login</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Log in</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- REGISTER MODAL -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">Register</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="InputFirstName">First Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name" required>
+              </div>
+              <div class="form-group">
+                <label for="InputLastName">Last Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name" required>
+              </div>
+              <div class="form-group">
+                <label for="InputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="InputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Sign up</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Début de la box FILMS -->
+    <div id="films" class="container">
+      <div class="container d-flex justify-content-center">
+        <div class="row container col-10 border pad-tb-20">
+          <div class="col">
+            <img class="container img-fluid" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+            <h7 class="">Lego Batman Movie</h7>
+            <p class=""><small>2017 Comédie</small></p>
+          </div>
+          <div class="col">
+            <img class="container img-fluid" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+            <h7 class="">Lord of the Ring: The Two Towers</h7>
+            <p class=""><small class="text-muted">2002 Adventure</small></p>
+          </div>
+          <div class="col">
+            <img class="container img-fluid" src="../img/logan-movie-poster-sm.jpg" alt="Logan">
+            <h7 class="card-title">Logan</h7>
+            <p class="card-text"><small class="text-muted">2017 Sci-Fi</small></p>
+          </div>
+          <div class="col">
+            <img class="container img-fluid" src="../img/transformers-age-of-extinction-movie-poster-sm.jpg" alt="Transformers">
+            <h7 class="">Transformers: Age of extinction</h7>
+            <p class=""><small class="text-muted"> Action</small></p>
+          </div>
+          <div class="col">
+            <img class="container img-fluid" src="../img/star-trek-beyond-thai-movie-poster-sm.jpg" alt="Star Trek">
+            <h7 class="">Star Trek Beyond</h7>
+            <p class=""><small class="text-muted">2017 Science-Fiction</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Début de la box FEATURED MOVIES -->
+    <div id="movies" class="container p-b2">
+      <h3 class="borderleft">featured movies</h3>
+      <nav class="">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="all-movies-tab" data-toggle="tab" href="#movies-all" role="tab" aria-controls="nav-all" aria-selected="true">All</a>
+          <a class="nav-item nav-link" id="adventure-movies-tab" data-toggle="tab" href="#movies-adventure" role="tab" aria-controls="nav-adventure" aria-selected="false">Adventure</a>
+          <a class="nav-item nav-link" id="comedie-movies-tab" data-toggle="tab" href="#movies-comedie" role="tab" aria-controls="nav-comedie" aria-selected="false">Comedie</a>
+          <a class="nav-item nav-link" id="drama-movies-tab" data-toggle="tab" href="#movies-drama" role="tab" aria-controls="nav-drama" aria-selected="false">Drama</a>
+          <a class="nav-item nav-link" id="scifi-movies-tab" data-toggle="tab" href="#movies-scifi" role="tab" aria-controls="nav-scifi" aria-selected="false">Sci-Fi</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="movies-all" role="tabpanel" aria-labelledby="movies-all">
+          <!-- FIRST ROW -->
+          <div class="row container row-one">
+            <div class="col comedie">
+              <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie"></img>
+              <h7 class="">Lego Batman Movie</h7>
+              <p class=""><small>2017 Comédie</small></p>
+            </div>
+            <div class="col adventure">
+              <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+              <h7 class="">Lord of the Ring: The Two Towers</h7>
+              <p class=""><small class="text-muted">2002 Adventure</small></p>
+            </div>
+            <div class="col scifi">
+              <img class="container" src="../img/jurassic-park-iii-movie-poster-sm.jpg" alt="Movie">
+              <h7 class="card-title">Jurassic Park</h7>
+              <p class="card-text"><small class="text-muted">2001 Thriller</small></p>
+            </div>
+            <div class="col comedie">
+              <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+              <h7 class="">Intouchables</h7>
+              <p class=""><small class="text-muted">2011 Comédie</small></p>
+            </div>
+            <div class="col drama">
+              <img class="container" src="../img/jurassic-park-iii-movie-poster-sm.jpg" alt="The English patient">
+              <h7 class="">The English patient</h7>
+              <p class=""><small class="text-muted">1996 Drama</small></p>
+            </div>
+            <div class="col fantasy">
+              <img class="container" src="../img/kingarthur-sm-poster.jpg" alt="King Arthur">
+              <h7 class="">King Arthur</h7>
+              <p class=""><small class="text-muted">2017 Fantasy</small></p>
+            </div>
+          </div>
+          <!-- SECOND ROW -->
+          <div class="row container">
+            <div class="col">
+              <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+              <h7 class="">Lego Batman Movie</h7>
+              <p class=""><small>2017 Comédie</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+              <h7 class="">Lord of the Ring: The Two Towers</h7>
+              <p class=""><small class="text-muted">2002 Adventure</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/jumanji-poster-sm.jpg" alt="Movie">
+              <h7 class="card-title">Jumanji</h7>
+              <p class="card-text"><small class="text-muted">2017 Action</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+              <h7 class="">Intouchables</h7>
+              <p class=""><small class="text-muted">2011 Comédie</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/jurassic-park-iii-movie-poster-sm.jpg" alt="The English patient">
+              <h7 class="">The English patient</h7>
+              <p class=""><small class="text-muted">1996 Drama</small></p>
+            </div>
+            <div class="col fantasy">
+              <img class="container" src="../img/kingarthur-sm-poster.jpg" alt="King Arthur">
+              <h7 class="">King Arthur</h7>
+              <p class=""><small class="text-muted">2017 Fantasy</small></p>
+            </div>
+          </div>
+          <!-- THIRD ROW -->
+          <div class="row container row-three hide">
+            <div class="col">
+              <img class="container" src="../img/batmanmovie-2017-comedie.jpg" alt="Batman Lego Movie">
+              <h7 class="">Lego Batman Movie</h7>
+              <p class=""><small>2017 Comédie</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/lesdeuxtours-2002-aventure.jpg" alt="The Two Towers">
+              <h7 class="">Lord of the Ring: The Two Towers</h7>
+              <p class=""><small class="text-muted">2002 Adventure</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/jumanji-poster-sm.jpg" alt="Movie">
+              <h7 class="card-title">Jumanji</h7>
+              <p class="card-text"><small class="text-muted">2017 Action</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/intouchables-2011-comedie.jpg" alt="Intouchables">
+              <h7 class="">Intouchables</h7>
+              <p class=""><small class="text-muted">2011 Comédie</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/jurassic-park-iii-movie-poster-sm.jpg" alt="The English patient">
+              <h7 class="">The English patient</h7>
+              <p class=""><small class="text-muted">1996 Drama</small></p>
+            </div>
+            <div class="col fantasy">
+              <img class="container" src="../img/kingarthur-sm-poster.jpg" alt="King Arthur">
+              <h7 class="">King Arthur</h7>
+              <p class=""><small class="text-muted">2017 Fantasy</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="movies-adventure" role="tabpanel" aria-labelledby="adventure-movies"></div>
+        <div class="tab-pane fade" id="movies-comedie" role="tabpanel" aria-labelledby="comedie-movies"></div>
+        <div class="tab-pane fade" id="movies-drama" role="tabpanel" aria-labelledby="drama-movies"></div>
+        <div class="tab-pane fade" id="movies-scifi" role="tabpanel" aria-labelledby="scifi-movies"></div>
+      </div>
+      <div class="morefilms"><button type="button" name="button" class="">Show more</button></div>
+      <div class="lessfilms hide"><button type="button" name="button" class="">Show less</button></div>
+    </div>
+
+    <!-- Début de la box FEATURED SERIES TV -->
+    <div id="series" class="container p-b2">
+      <h3 class="borderleft">featured series tv</h3>
+      <nav class="">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="all-series" data-toggle="tab" href="#series-all" role="tab" aria-controls="nav-all" aria-selected="true">All</a>
+          <a class="nav-item nav-link" id="adventure-series" data-toggle="tab" href="#series-adventure" role="tab" aria-controls="nav-adventure" aria-selected="false">Adventure</a>
+          <a class="nav-item nav-link" id="comedie-series" data-toggle="tab" href="#series-comedie" role="tab" aria-controls="nav-comedie" aria-selected="false">Comedie</a>
+          <a class="nav-item nav-link" id="drama-series" data-toggle="tab" href="#series-drama" role="tab" aria-controls="nav-drama" aria-selected="false">Drama</a>
+          <a class="nav-item nav-link" id="scifi-series" data-toggle="tab" href="#series-scifi" role="tab" aria-controls="nav-scifi" aria-selected="false">Sci-Fi</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="series-all" role="tabpanel" aria-labelledby="series-all">
+          <!-- FIRST ROW -->
+          <div class="row container">
+            <div class="col">
+              <img class="container" src="../img/tvseries/the-100-movie-poster-sm.jpg" alt="the 100">
+              <h7 class="">The 100</h7>
+              <p class=""><small>2014 Science-Fiction</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/stranger-things-polish-movie-poster-sm.jpg" alt="The Two Towers">
+              <h7 class="">Stranger Things</h7>
+              <p class=""><small class="text-muted">2016 Thriller</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/vikings-ukrainian-movie-poster-sm.jpg" alt="movie">
+              <h7 class="card-title">Vikings</h7>
+              <p class="card-text"><small class="text-muted">2013 Action</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/the-crown-british-movie-poster-sm.jpg" alt="the crown">
+              <h7 class="">The Crown</h7>
+              <p class=""><small class="text-muted">2016 Drama</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/jurassic-park-iii-movie-poster-sm.jpg" alt="The English patient">
+              <h7 class="">The English patient</h7>
+              <p class=""><small class="text-muted">1996 Drama</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/jane-the-virgin.jpg" alt="Jane the Virgin">
+              <h7 class="">Jane the Virgin</h7>
+              <p class=""><small class="text-muted">2014 Comedy</small></p>
+            </div>
+          </div>
+          <!-- The 2nd row starts here -->
+          <div class="row container">
+            <div class="col">
+              <img class="container" src="../img/tvseries/the-100-movie-poster-sm.jpg" alt="the 100">
+              <h7 class="">The 100</h7>
+              <p class=""><small>2014 Science-Fiction</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/stranger-things-polish-movie-poster-sm.jpg" alt="The Two Towers">
+              <h7 class="">Stranger Things</h7>
+              <p class=""><small class="text-muted">2016 Thriller</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/vikings-ukrainian-movie-poster-sm.jpg" alt="movie">
+              <h7 class="card-title">Vikings</h7>
+              <p class="card-text"><small class="text-muted">2013 Action</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/the-crown-british-movie-poster-sm.jpg" alt="the crown">
+              <h7 class="">The Crown</h7>
+              <p class=""><small class="text-muted">2016 Drama</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/jurassic-park-iii-movie-poster-sm.jpg" alt="The English patient">
+              <h7 class="">The English patient</h7>
+              <p class=""><small class="text-muted">1996 Drama</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/jane-the-virgin.jpg" alt="Jane the Virgin">
+              <h7 class="">Jane the Virgin</h7>
+              <p class=""><small class="text-muted">2014 Comedy</small></p>
+            </div>
+          </div>
+          <!-- THIRD ROW -->
+          <div class="row container row3 hide">
+            <div class="col">
+              <img class="container" src="../img/tvseries/the-100-movie-poster-sm.jpg" alt="the 100">
+              <h7 class="">The 100</h7>
+              <p class=""><small>2014 Science-Fiction</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/stranger-things-polish-movie-poster-sm.jpg" alt="The Two Towers">
+              <h7 class="">Stranger Things</h7>
+              <p class=""><small class="text-muted">2016 Thriller</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/vikings-ukrainian-movie-poster-sm.jpg" alt="movie">
+              <h7 class="card-title">Vikings</h7>
+              <p class="card-text"><small class="text-muted">2013 Action</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/the-crown-british-movie-poster-sm.jpg" alt="the crown">
+              <h7 class="">The Crown</h7>
+              <p class=""><small class="text-muted">2016 Drama</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/jurassic-park-iii-movie-poster-sm.jpg" alt="The English patient">
+              <h7 class="">The English patient</h7>
+              <p class=""><small class="text-muted">1996 Drama</small></p>
+            </div>
+            <div class="col">
+              <img class="container" src="../img/tvseries/jane-the-virgin.jpg" alt="Jane the Virgin">
+              <h7 class="">Jane the Virgin</h7>
+              <p class=""><small class="text-muted">2014 Comedy</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="series-adventure" role="tabpanel" aria-labelledby="series-adventure"></div>
+        <div class="tab-pane fade" id="series-comedie" role="tabpanel" aria-labelledby="series-comedie"></div>
+        <div class="tab-pane fade" id="series-drama" role="tabpanel" aria-labelledby="series-drama"></div>
+        <div class="tab-pane fade" id="series-scifi" role="tabpanel" aria-labelledby="series-scifi"></div>
+      </div>
+      <div class="moreseries"><button type="button" name="button" class="">Show more</button></div>
+      <div class="lessseries hide"><button type="button" name="button" class="">Show less</button></div>
+    </div>
+
+      <!-- Début de la box SHOP -->
+    <div id="shop" class="container-fluid p-b2">
+      <div class="container">
+      <h3 class="borderleft">shop movies</h3>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-8 list-movies">
+            <div class="row"></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 trailer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Début de la box CONTACT US -->
+    <div id="contactus" class="container p-b2">
+      <h3 class="borderleft">contact us</h3>
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Email">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Subject">
+          </div>
+        </div>
+        <textarea class="form-control" placeholder="your message" id="FormControlTextarea1" rows="3"></textarea>
+      </form>
+      <div class="send">
+        <button type="button" name="button">send message</button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- formulaire et bouton subscribe -->
+      <div class="subscribe">
+        <h4>subscribe to us</h4>
+        <form>
+          <div>
+            <label for="subscribe"></label>
+            <input type="email" id="subscribe" value="Enter your email..." />
+            <button type="button" name="subscribe">SUBSCRIBE</button>
+          </div>
+        </form>
+      </div>
+      <div class="list-footer d-flex justify-content-center pb-3 container">
+        <div class="row justify-content-center">
+          <div class="release col">
+            <h5>Release</h5>
+            <hr>
+            <ul>
+              <li>2016</li>
+              <li>2015</li>
+              <li>2014</li>
+              <li>2013</li>
+              <li>2012</li>
+              <li>2011</li>
+            </ul>
+          </div>
+          <div class="movies-footer col">
+            <h5>Movies</h5>
+            <hr>
+            <ul>
+              <li>ADVENTURE</li>
+              <li>COMEDY</li>
+              <li>FANTASY</li>
+              <li>ACTION</li>
+              <li>MOVIES</li>
+              <li>HORROR</li>
+            </ul>
+          </div>
+          <div class="review-movies col">
+            <h5>Reviews Movies</h5>
+            <hr>
+            <button type="button" name="Comedy">Comedy</button>
+            <button type="button" name="Horror">Horror</button>
+            <button type="button" name="Historical">Historical</button>
+            <button type="button" name="Romantic">Romantic</button>
+            <button type="button" name="Love">Love</button>
+            <button type="button" name="Action">Action</button>
+            <button type="button" name="Reviews">Reviews</button>
+            <button type="button" name="Comedy">Comedy</button>
+            <button type="button" name="Horror">Horror</button>
+            <button type="button" name="Historical">Historical</button>
+            <button type="button" name="Love">Love</button>
+            <button type="button" name="Comedy">Comedy</button>
+            <button type="button" name="Horror">Horror</button>
+            <button type="button" name="Historical">Historical</button>
+          </div>
+          <div class="latest-movies col">
+            <h5>Latest Movies</h5>
+            <hr>
+            <div class="row">
+              <img src="../img/john-wick-chapter-two-british-movie-poster-sm.jpg" class="">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="row">
+              <img src="../img/john-wick-chapter-two-british-movie-poster-sm.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="row">
+              <img src="../img/john-wick-chapter-two-british-movie-poster-sm.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="row">
+              <img src="../img/john-wick-chapter-two-british-movie-poster-sm.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="allezcine col">
+            <h4 class="red">Allez<span class="white">Cine!</span></h4>
+            <hr>
+            <img src="../img/star-trek-beyond-thai-movie-poster-sm.jpg" alt="image-film" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="connect-us container">
+        <h5>Connect us</h5>
+        <div class="arrow-top"><button id="toparrow"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></button></div>
+          <div class="sociaux">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+          </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
